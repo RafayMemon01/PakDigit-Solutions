@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #f15a24;
+    /* Vibrant orange */
+    --background-color: #121212;
+    /* Deep dark gray */
+    --text-color: #ffffff;
+    /* White for text */
+    --secondary-color: #1a1a1a;
+    /* Slightly lighter dark gray for sections */
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+    font-family: 'Roboto', sans-serif;
+    /* For body text */
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    /* For headings */
+    color: #f15a24;
+}
+
+.container {
+    max-width: 1200px;
+    /* Set the maximum width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    padding: 20px;
+    /* Add padding for inner spacing */
+    background-color: var(--secondary-color);
+    /* Dark gray background */
+    color: #ffffff;
+    /* White text for readability */
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for depth */
+}
+
+header {
+    background-color: #fff;
+    border-radius: 1em;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(96, 96, 96, 0.3) 0px 8px 16px -8px;
+}
+
+.logo {
+    padding: .5em;
+}
+
+.action-btn {
+    margin: .5em;
+    background-color: var(--primary-color);
+    border: none;
+    padding: .5em 2em .5em 2em;
+    border-radius: 1em;
+    color: var(--secondary-color);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 1s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+.action-btn:hover{
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+nav{
+    ul{
+        display: flex;
+        gap: 1em;
+
+        li{
+
+            a{
+                text-decoration: none;
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.active {
+    color: var(--primary-color); 
+    font-weight: bold; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .active:hover {
+    transform: scale(1); 
+    cursor: pointer; 
+  }
