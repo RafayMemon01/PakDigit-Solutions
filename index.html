@@ -21,8 +21,8 @@
 
             <nav>
                 <ul>
-                    <li><a class="active" href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li><a href="">Our Services</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Our Portfolio</a></li>
@@ -40,7 +40,7 @@
             <nav class="nav-menu-sm" id="mobileNav">
                 <ul>
                     <li><a class="active" href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li><a href="">Our Services</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Our Portfolio</a></li>
@@ -48,13 +48,37 @@
             </nav>
         </header>
         <main>
-            <div class="heroSection">
-                <h1>Ab Apka <br><span id="heroText">Business</span><br> Hoga Online</h1>
-                <p>PakDigit Solutions Ke Sath</p>
-            </div>
+            <section class="hero">
+
+                <div class="heroSection">
+                    <h1>Ab Apka <br><span id="heroText">Business</span><br> Hoga Online</h1>
+                    <p>PakDigit Solutions Ke Sath</p>
+                    <button class="heroSection-btn">Explore Our Services</button>
+                </div>
+            </section>
+            <section id="about-us">
+                <h1>ABOUT US</h1>
+                
+                <div class="about-us-container">
+                    <div class="leftside"> 
+                        <img width="500px" src="./Assets/annie-spratt-sggw4-qDD54-unsplash.jpg" alt="PakDigit Solutions Office Image">
+                    </div>
+                    <div class="right">
+                        <p>At <span><strong>PakDigit Solutions</strong></span>, we believe in delivering high-quality, client-focused solutions that are tailored to meet your unique needs. Our passionate and talented team is dedicated to <span><strong>helping</strong></span> you transform your ideas into reality. Whether it's building a stunning website, executing impactful social media campaigns, or designing custom graphics, we ensure your <span><strong>business stands out</strong></span> in the digital world.</p>
+                        <div class="social-icons">
+                            <a class="social-link bi bi-facebook" href="" target="_blank"></a>
+                            <a class="social-link bi bi-instagram" href="" target="_blank"></a>
+                            <a class="social-link bi bi-linkedin" href="" target="_blank"></a>
+                            <a class="social-link bi bi-whatsapp" href="" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </main>
     </div>
 
     <script src="./script.js"></script>
+    <script src="./typing.js"></script>
 </body>
 </html>

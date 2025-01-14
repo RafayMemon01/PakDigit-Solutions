@@ -2,7 +2,7 @@ window.onload = ()=>{
     setTimeout(()=>{
         document.querySelector(".spinnerContainer").style.display = "none";
         document.querySelector(".container").style.display = "block";
-    },3000)
+    },1000) //3 sec normal decrrease for developmenr
 }
 
 const burgerBtn = document.getElementById("burgerBtn");
@@ -13,11 +13,3 @@ burgerBtn.addEventListener("click", () => {
 });
 
 
-let different = ["Business","Karobar"]
-
-for(let i = 0; i<different.length;i++){
-    setTimeout(()=>{
-        let text = document.getElementById("heroText").innerHTML = different[i]
-
-    }, 5000)
-}
