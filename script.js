@@ -5,6 +5,14 @@ window.onload = ()=>{
     },3000)
 }
 
+const burgerBtn = document.getElementById("burgerBtn");
+const mobileNav = document.getElementById("mobileNav");
+
+burgerBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("open");
+});
+
+
 let different = ["Business","Karobar"]
 
 for(let i = 0; i<different.length;i++){
