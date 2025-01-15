@@ -8,6 +8,7 @@
     --secondary-color: #1a1a1a;
     /* Slightly lighter dark gray for sections */
 }
+
 /* Styling the scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
@@ -15,22 +16,27 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Light gray background for the track */
+    background-color: #f1f1f1;
+    /* Light gray background for the track */
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color); /* Orange thumb color */
+    background-color: var(--primary-color);
+    /* Orange thumb color */
     border-radius: 10px;
-    border: 3px solid #f1f1f1; /* Optional: Adds a border around the thumb for better visibility */
+    border: 3px solid #f1f1f1;
+    /* Optional: Adds a border around the thumb for better visibility */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #e64a19; /* Darker orange when hovering over the thumb */
+    background-color: #e64a19;
+    /* Darker orange when hovering over the thumb */
 }
 
 ::-webkit-scrollbar-button {
-    display: none; /* Hide scrollbar buttons */
+    display: none;
+    /* Hide scrollbar buttons */
 }
 
 .spinnerContainer {
@@ -399,16 +405,17 @@ nav {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .leftside img {
         width: 100%;
         max-width: 400px;
     }
 }
+
 @media only screen and (max-width: 425px) {
-.right p {
-    font-size: 12px;
-}
+    .right p {
+        font-size: 12px;
+    }
 }
 
 
@@ -419,44 +426,158 @@ nav {
     display: flex;
     justify-content: space-around;
     margin-top: 4em;
-    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    flex-wrap: wrap;
+    /* Allows wrapping for responsiveness */
 }
 
-.mission, .vision {
-    width: 40%; /* Default width for larger screens */
+.mission,
+.vision {
+    width: 40%;
+    /* Default width for larger screens */
     background-color: var(--text-color);
     color: var(--background-color);
     padding: 0.5em;
     border-radius: 2em 2em 2em 0em;
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 10px rgba(241, 90, 36, 0.5);
-    margin: 1em 0; /* Adds spacing between items */
-    opacity: 0; /* Start invisible */
-    transform: translateY(50px); /* Slide in from below */
+    margin: 1em 0;
+    /* Adds spacing between items */
+    opacity: 0;
+    /* Start invisible */
+    transform: translateY(50px);
+    /* Slide in from below */
     transition: transform 0.8s ease, opacity 0.8s ease;
+
+    h2 {
+        font-size: 22px;
+    }
 }
-.mission.in-view, .vision.in-view {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Reset position */
+
+.mission.in-view,
+.vision.in-view {
+    opacity: 1;
+    /* Fade in */
+    transform: translateY(0);
+    /* Reset position */
 }
+
 .vision {
-    border-radius: 2em 2em 0em 2em; /* Slightly different border-radius */
+    border-radius: 2em 2em 0em 2em;
+    /* Slightly different border-radius */
 }
 
 /* Media Query for Responsiveness */
 @media only screen and (max-width: 750px) {
     .mission-vision-container {
-        flex-direction: column; /* Stacks items vertically */
-        align-items: center;   /* Centers items */
-        gap: 1em;              /* Adds spacing between items */
+        flex-direction: column;
+        /* Stacks items vertically */
+        align-items: center;
+        /* Centers items */
+        gap: 1em;
+        /* Adds spacing between items */
     }
 
-    .mission, .vision {
-        width: 90%; /* Makes items take up most of the screen */
+    .mission,
+    .vision {
+        width: 90%;
+        /* Makes items take up most of the screen */
     }
 }
+
 @media only screen and (max-width: 425px) {
-    .mission,.vision p {
+
+    .mission,
+    .vision p {
         font-size: 12px;
     }
+}
+
+.about-fancy-text {
+    font-size: 32px;
+    text-align: center;
+    padding: 0 1em 0 1em;
+
+    h3 {
+        color: var(--text-color);
     }
+
+    span {
+        font-size: 48px;
+        color: var(--primary-color);
+    }
+
+    .small-fancy {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
+    }
+
+    strong {
+        background-color: var(--text-color);
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-size: 48px;
+        padding: .2em .5em .2em .5em;
+        box-shadow: 0 4px 10px rgba(241, 90, 36, 0.5);
+        border-radius: 2em 2em 2em 0em;
+
+    }
+}
+
+
+@media only screen and (max-width:822px) {
+    .about-fancy-text {
+        font-size: 28px;
+
+        span {
+            font-size: 32px;
+        }
+
+        strong {
+            font-size: 34px;
+        }
+
+        .small-fancy {
+            font-size: 16px;
+        }
+    }
+}
+@media only screen and (max-width:606px) {
+    .about-fancy-text {
+        font-size: 24px;
+
+        span {
+            font-size: 28px;
+        }
+
+        strong {
+            font-size: 30px;
+        }
+
+        .small-fancy {
+            font-size: 12px;
+        }
+    }
+}
+@media only screen and (max-width:426px) {
+    .about-fancy-text {
+        font-size: 22px;
+
+        span {
+            font-size: 24px;
+        }
+
+        strong {
+            font-size: 26px;
+        }
+
+        .small-fancy {
+            font-size: 8px;
+        }
+    }
+}
