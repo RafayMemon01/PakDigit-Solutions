@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #f15a24;
+    /* Vibrant orange */
+    --background-color: #121212;
+    /* Deep dark gray */
+    --text-color: #ffffff;
+    /* White for text */
+    --secondary-color: #1a1a1a;
+    /* Slightly lighter dark gray for sections */
+}
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav a {
+    position: relative;
+    font-size: 1em;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 6px 10px;
+    transition: .5s;
+}
+
+.main-nav a:hover {
+    color:  var(--secondary-color);
+}
+
+.main-nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    border-bottom: 4px solid var(--primary-color);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.main-nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.animated-nav-bar {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0; */
+    /* margin: 0; */
+    flex-wrap: wrap;
+    background-color: var(--text-color);
+}
+
+.brand-name {
+    justify-content: left;
+    color: var(--secondary-color);
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-size: 22px;
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+@media screen and (max-width: 768px) {
+    .animated-nav-bar {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 410px) {
+    .animated-nav-bar {
+        justify-content: center;
+
+        nav a{
+            font-size: 0.8em;
+            padding: 6px 10px; 
+        }
+    }
+}
