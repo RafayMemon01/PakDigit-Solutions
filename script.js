@@ -12,4 +12,19 @@ burgerBtn.addEventListener("click", () => {
     mobileNav.classList.toggle("open");
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.mission, .vision');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            }
+        });
+    }, {
+        threshold: 0.2, // Trigger when 20% of the element is visible
+    });
+
+    elements.forEach(element => observer.observe(element));
+});
 
