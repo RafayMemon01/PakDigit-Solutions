@@ -170,7 +170,7 @@ nav {
 }
 
 .active {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -265,7 +265,7 @@ nav {
 @media only screen and (max-width:610px) {
 
     .navbar-lg {
-        display: none;
+        display: none !important;
     }
 
     .nav-bar-sm {
