@@ -547,6 +547,7 @@ nav {
         }
     }
 }
+
 @media only screen and (max-width:606px) {
     .about-fancy-text {
         font-size: 24px;
@@ -564,6 +565,7 @@ nav {
         }
     }
 }
+
 @media only screen and (max-width:426px) {
     .about-fancy-text {
         font-size: 22px;
@@ -578,6 +580,57 @@ nav {
 
         .small-fancy {
             font-size: 8px;
+        }
+    }
+}
+
+/* why choose us  */
+
+.why-choose-us {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 32px;
+        color: var(--primary-color);
+        /* background-color: var(--text-color); */
+        box-shadow: 0 4px 10px rgba(241, 90, 36, 0.5);
+
+        padding: .5em;
+    }
+}
+
+.why-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    padding-top: 5em;
+
+    .top,
+    .bottom {
+        display: flex;
+        gap: 5em;
+
+
+
+        div {
+            max-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(241, 90, 36, 0.5);
+            padding: 1em;
+
+            button {
+                border: none;
+                background-color: transparent;
+                color: var(--text-color);
+                font-size: 32px;
+            }
         }
     }
 }
