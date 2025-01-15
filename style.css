@@ -617,7 +617,7 @@ nav {
 
 
         div {
-            max-width: 300px;
+            width: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -630,6 +630,36 @@ nav {
                 background-color: transparent;
                 color: var(--text-color);
                 font-size: 32px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .why-cards-container {
+
+        .top,
+        .bottom {
+            flex-direction: column;
+        }
+    }
+}
+@media only screen and (max-width:426px){
+    .why-choose-us{
+
+        h1{
+            font-size: 28px;
+        }
+    }
+    .why-cards-container {
+
+        .top,
+        .bottom {
+            flex-direction: column;
+
+            div{
+                width: 200px;
             }
         }
     }
