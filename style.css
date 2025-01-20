@@ -427,6 +427,8 @@ nav {
     justify-content: space-around;
     margin-top: 4em;
     flex-wrap: wrap;
+    /* height: max-content; */
+    padding: 5em 0 5em 0;
     /* Allows wrapping for responsiveness */
 }
 
@@ -495,7 +497,7 @@ nav {
 .about-fancy-text {
     font-size: 32px;
     text-align: center;
-    padding: 0 1em 0 1em;
+    padding: 3em 1em 1em 1em;
 
     h3 {
         color: var(--text-color);

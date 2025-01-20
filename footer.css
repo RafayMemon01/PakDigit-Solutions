@@ -1,8 +1,18 @@
 /* Footer is Developed By Hamza */
+:root {
+  --primary-color: #f15a24;
+  /* Vibrant orange */
+  --background-color: #121212;
+  /* Deep dark gray */
+  --text-color: #ffffff;
+  /* White for text */
+  --secondary-color: #1a1a1a;
+  /* Slightly lighter dark gray for sections */
+}
 
 .footer {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
