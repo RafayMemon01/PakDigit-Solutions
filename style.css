@@ -260,3 +260,32 @@ hr {border:0; border-top:1px solid #444; margin:20px 0;}
     font-size: 24px;
     color: white;
 }
+
+.privacy-policy {
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.privacy-policy h1, 
+.privacy-policy h2 {
+    color: var(--primary-color);
+}
+
+.privacy-policy p, .privacy-policy ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.privacy-policy ul {
+    padding-left: 20px;
+}
+
+.privacy-policy a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
